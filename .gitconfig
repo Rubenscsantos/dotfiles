@@ -9,3 +9,7 @@
 	includeIssuesSection = false
 [core]
 	editor = vim
+[push]
+	default = current
+[github]
+	user = joaothallis
