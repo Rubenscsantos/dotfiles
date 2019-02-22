@@ -78,9 +78,6 @@ sh -c \
    "$(wget https://raw.githubusercontent.com/robbyrussell/\
 oh-my-zsh/master/tools/install.sh -O -)"
 
-git config --global user.name "João Thallis"
-git config --global user.email joaothallis.developer@gmail.com
-
 ssh-keygen
 xclip -sel clip < ~/.ssh/id_rsa.pub
 firefox https://github.com/settings/ssh/new
