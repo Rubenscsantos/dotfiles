@@ -13,7 +13,7 @@ sudo add-apt-repository ppa:kelleyk/emacs
 sudo apt update
 sudo apt upgrade
 
-sudo apt install git tig tmux tilix xclip feh pgcli mycli curl ranger zsh tmux \
+sudo apt install git tig tilix xclip feh pgcli mycli curl ranger zsh tmux \
      translate-shell gnustep-gui-runtime mps-youtube rofi i3 i3lock-fancy \
      nodejs apt-transport-https ca-certificates gnupg-agent containerd.io \
      software-properties-common fzy inotify-tools jq automake emacs26 autoconf \
@@ -23,6 +23,8 @@ sudo apt install git tig tmux tilix xclip feh pgcli mycli curl ranger zsh tmux \
 
 git clone --bare https://github.com/joao/dotfiles.git $HOME/.dotfiles
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 curl -l \
      https://gist.githubusercontent.com/lucasdavila/3875946/raw/\
