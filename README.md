@@ -8,10 +8,6 @@ Emacs, i3, git, zsh and tmux dotfiles.
 
 - git
 
-```
-Give examples
-```
-
 ### Installing
 
 #### Setup environment in a new computer
