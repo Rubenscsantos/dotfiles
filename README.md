@@ -20,6 +20,10 @@ Emacs, i3, git, zsh and tmux dotfiles.
 
 `alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'`
 
+##### Set git status to hide untracked files
+
+`dotfiles config --local status.showUntrackedFiles no`
+
 ##### Checkout the actual content from the git repository to your $HOME
 
 `dot checkout`
