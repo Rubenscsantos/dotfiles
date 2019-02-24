@@ -29,8 +29,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 curl -l \
      https://gist.githubusercontent.com/lucasdavila/3875946/raw/\
-     1c100cae16a06bef154af0f290d665405b554b3b/install_source_code_pro.sh \
-    | sudo sh
+1c100cae16a06bef154af0f290d665405b554b3b/install_source_code_pro.sh | sudo sh
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
 mix do escript.install hex ex_doc, local.hex
