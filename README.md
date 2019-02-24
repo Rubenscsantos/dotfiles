@@ -14,7 +14,7 @@ Emacs, i3, git, zsh and tmux dotfiles.
 
 ##### Clone this repository
 
-`git clone --bare https://github.com/joao/dotfiles.git $HOME/.dotfiles`
+`git clone --bare https://github.com/joaothallis/dotfiles.git $HOME/.dotfiles`
 
 ##### Define this alias in the current shell scope
 
@@ -22,13 +22,13 @@ Emacs, i3, git, zsh and tmux dotfiles.
 
 ##### Checkout the actual content from the git repository to your $HOME
 
-`dotfiles checkout`
+`dot checkout`
 
 #### Installing using `script.sh`
 
 Run `bash script.sh`
 
-Note that if you already have some of the files you'll get an error message. You can either (1) delete them or (2) back them up somewhere else. It's up to you.
+Note that if you already have some of the files you'll get an error message. You can either delete them or back them up somewhere else. It's up to you.
 
 ## Contributing
 
