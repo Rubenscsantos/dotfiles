@@ -80,6 +80,7 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 sh -c \
    "$(wget https://raw.githubusercontent.com/robbyrussell/\
 oh-my-zsh/master/tools/install.sh -O -)"
+chsh -s $(which zsh)
 
 ssh-keygen
 xclip -sel clip < ~/.ssh/id_rsa.pub
