@@ -79,6 +79,7 @@ sudo snap install kubectl --classic
 sudo snap install slack --classic
 
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+asdf plugin-add kubectx
 
 sh -c \
    "$(wget https://raw.githubusercontent.com/robbyrussell/\
