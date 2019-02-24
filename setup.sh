@@ -60,6 +60,9 @@ wget \
     https://apt.iteas.at/iteas/pool/main/o/openfortigui/\
 openfortigui_0.7.2-3_bionic_amd64.deb
 sudo dpkg -i openfortigui_0.7.2-3_bionic_amd64.deb
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt-get install -f
 
 curl -sL https://deb.nodesource.com/setup_8.x | sudo bash -
@@ -69,7 +72,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 rm -rf erlang-solutions_1.0_all.deb openfortigui_0.7.2-3_bionic_amd64.deb \
    dialyxir bunt credo SourceCodePro_FontsOnly-1.010.zip \
-   SourceCodePro_FontsOnly-1.010
+   SourceCodePro_FontsOnly-1.010 google-chrome-stable_current_amd64.deb
 
 snap install postman
 sudo snap install kubectl --classic
