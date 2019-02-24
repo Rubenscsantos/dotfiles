@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo apt install curl
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
@@ -13,13 +14,13 @@ sudo add-apt-repository ppa:kelleyk/emacs
 sudo apt update
 sudo apt upgrade
 
-sudo apt install git tig tilix xclip feh pgcli mycli curl ranger zsh tmux \
+sudo apt install git tig tilix xclip feh pgcli mycli ranger zsh tmux tree \
      translate-shell gnustep-gui-runtime mps-youtube rofi i3 i3lock-fancy \
      nodejs apt-transport-https ca-certificates gnupg-agent containerd.io \
      software-properties-common fzy inotify-tools jq automake emacs26 autoconf \
      libreadline-dev libncurses-dev libssl-dev libyaml-dev libxslt-dev \
      libffi-dev libtool unixodbc-dev esl-erlang elixir docker-ce docker-ce-cli \
-     python-pygments tree
+     python-pygments
 
 git clone --bare https://github.com/joao/dotfiles.git $HOME/.dotfiles
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout
