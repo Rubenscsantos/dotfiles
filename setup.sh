@@ -22,6 +22,8 @@ sudo apt install git tig tilix xclip feh pgcli mycli ranger zsh tmux tree \
      libffi-dev libtool unixodbc-dev esl-erlang elixir docker-ce docker-ce-cli \
      python-pygments
 
+sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
+
 git clone --bare https://github.com/joao/dotfiles.git $HOME/.dotfiles
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout
 
