@@ -76,6 +76,7 @@ rm -rf erlang-solutions_1.0_all.deb openfortigui_0.7.2-3_bionic_amd64.deb \
    SourceCodePro_FontsOnly-1.010 google-chrome-stable_current_amd64.deb
 
 snap install postman
+snap install ripgrep
 sudo snap install kubectl --classic
 sudo snap install slack --classic
 
