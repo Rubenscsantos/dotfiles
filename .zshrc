@@ -73,6 +73,7 @@ kubenv() { kubectl exec -it $(kubepod) -c $1 printenv }
 kubexec() { kubectl exec -it $(kubepod) -c $1 /bin/bash }
 kubeforward() { kubectl port-forward deploy/$1 5432:5432 }
 
+alias u="kubectl describe service | grep Endpoint | grep -v none | awk '{ print $2 }'| xclip -selection c"
 
 # kubectl config
 export KUBECONFIG=/home/joao/.kube/stone
