@@ -37,11 +37,6 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 mix do escript.install hex ex_doc, local.hex
 mix archive.install hex phx_new 1.4.1
 
-git clone https://github.com/jeremyjh/dialyxir.git
-cd dialyxir
-mix do deps.get, archive.build, archive.install
-cd -
-
 git clone https://github.com/rrrene/bunt.git
 cd bunt
 mix do archive.build, archive.install
