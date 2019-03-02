@@ -134,11 +134,8 @@ bar {
         status_command i3status
 }
 
-bindsym Mod4+Shift+e exec "emacs ."
-
-bindsym Mod4+p exec "postman"
-bindsym Mod4+Shift+a exec "slack"
-bindsym Mod4+t exec "telegram"
+bindsym Mod4+p exec postman
+bindsym Mod4+Shift+a exec slack
 
 for_window [class=".*"] fullscreen enable
 for_window [class="^.*"] border pixel 1
