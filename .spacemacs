@@ -43,7 +43,7 @@ values."
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages
-   '(wttrin)
+   '()
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages
    '()
@@ -430,7 +430,5 @@ you should place your code here.")
           (lambda ()
             (add-hook 'before-save-hook 'elixir-format
                       nil t)))
-(setq wttrin-default-cities '("São Gonçalo"))
-(setq wttrin-default-accept-language '("Accept-Language" . "en"))
 (setq-default dotspacemacs-configuration-layers '((shell :variables shell-default-shell'eshell)))
 (setq markdown-command "pandoc")
