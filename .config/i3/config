@@ -133,7 +133,6 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
-bindsym Mod4+b exec "firefox -url http://github.com/notifications"
 
 bindsym Mod4+Shift+e exec "emacs ."
 
