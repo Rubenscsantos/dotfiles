@@ -75,6 +75,7 @@ sudo snap install slack --classic
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 asdf plugin-add kubectx https://github.com/virtualstaticvoid/asdf-kubectx.git
 asdf plugin-add python https://github.com/danhper/asdf-python.git
+asdf plugin-add elixir
 
 sh -c \
    "$(wget https://raw.githubusercontent.com/robbyrussell/\
