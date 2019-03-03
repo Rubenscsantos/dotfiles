@@ -118,9 +118,9 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-exec --no-startup-id i3-msg 'workspace 1; exec tilix'
-exec --no-startup-id i3-msg 'workspace 2; exec emacs'
-exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/google-chrome'
+
+exec i3-msg 'workspace 1; exec tilix'
+exec i3-msg 'workspace 2; exec emacs'
 
 bindsym $mod+Shift+s exec i3lock-fancy
 # suspend and lock
