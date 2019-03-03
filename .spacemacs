@@ -32,7 +32,8 @@ values."
    '()
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(html javascript python erlang yaml elixir
+   '(
+     vimscript html javascript python erlang yaml elixir
           elm emacs-lisp semantic shell-scripts markdown
           org colors git github version-control helm
           shell auto-completion spell-checking syntax-checking
