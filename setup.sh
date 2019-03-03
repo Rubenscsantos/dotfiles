@@ -6,9 +6,6 @@ sudo add-apt-repository \
    $(lsb_release -cs) \
    stable"
 
-wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && \
-    sudo dpkg -i erlang-solutions_1.0_all.deb
-
 sudo add-apt-repository ppa:kelleyk/emacs
 
 sudo apt update
@@ -19,7 +16,7 @@ sudo apt install git tig tilix xclip feh pgcli mycli ranger zsh tmux tree \
      nodejs apt-transport-https ca-certificates gnupg-agent containerd.io \
      software-properties-common fzy inotify-tools jq automake emacs26 autoconf \
      libreadline-dev libncurses-dev libssl-dev libyaml-dev libxslt-dev \
-     libffi-dev libtool unixodbc-dev esl-erlang elixir docker-ce docker-ce-cli \
+     libffi-dev libtool unixodbc-dev docker-ce docker-ce-cli \
      python-pygments pandoc
 
 sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
@@ -66,7 +63,7 @@ curl -sL https://deb.nodesource.com/setup_8.x | sudo bash -
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
-rm -rf erlang-solutions_1.0_all.deb openfortigui_0.7.2-3_bionic_amd64.deb \
+rm -rf openfortigui_0.7.2-3_bionic_amd64.deb \
    dialyxir bunt credo SourceCodePro_FontsOnly-1.010.zip \
    SourceCodePro_FontsOnly-1.010 google-chrome-stable_current_amd64.deb
 
