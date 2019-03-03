@@ -31,6 +31,8 @@ curl -l \
 1c100cae16a06bef154af0f290d665405b554b3b/install_source_code_pro.sh | sudo sh
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 mix do escript.install hex ex_doc, local.hex
 mix archive.install hex phx_new 1.4.1
 
