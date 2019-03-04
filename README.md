@@ -1,6 +1,6 @@
 # Dotfiles
 
-Emacs, i3, git, zsh and tmux dotfiles.
+Emacs, vim, i3, git, zsh and tmux dotfiles.
 
 ## Getting Started
 
