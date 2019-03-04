@@ -78,6 +78,8 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 asdf plugin-add kubectx https://github.com/virtualstaticvoid/asdf-kubectx.git
 asdf plugin-add python https://github.com/danhper/asdf-python.git
 asdf plugin-add elixir
+asdf plugin-add nodejs 
+bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 
 sh -c \
    "$(wget https://raw.githubusercontent.com/robbyrussell/\
