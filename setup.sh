@@ -17,7 +17,7 @@ sudo apt install git tig tilix xclip feh pgcli mycli ranger zsh tmux tree \
      software-properties-common fzy inotify-tools jq automake emacs26 autoconf \
      libreadline-dev libncurses-dev libssl-dev libyaml-dev libxslt-dev \
      libffi-dev libtool unixodbc-dev docker-ce docker-ce-cli \
-     python-pygments pandoc
+     python-pygments bpython pandoc
 
 sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 
