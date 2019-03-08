@@ -122,7 +122,7 @@ mode "resize" {
 exec i3-msg 'workspace 1; exec tilix'
 exec i3-msg 'workspace 2; exec emacs'
 
-bindsym $mod+Shift+s exec i3lock-fancy
+bindsym $mod+Shift+s exec "i3lock --color 000000"
 # suspend and lock
 bindsym $mod+Shift+u exec --no-startup-id "systemctl suspend && i3lock-fancy"
 
