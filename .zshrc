@@ -19,7 +19,7 @@ alias n="nmtui"
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias m="mix"
 
-alias kc='docker kill $(docker ps -q)'
+alias kc='docker kill $(docker ps -q) && docker rm kafka zookeeper'
 alias ds='docker ps'
 
 alias gl=gloga
