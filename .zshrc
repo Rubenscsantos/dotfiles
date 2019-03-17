@@ -14,6 +14,7 @@ alias z="source ~/.zshrc"
 alias co="mix coveralls.html && firefox cover/excoveralls.html"
 alias de="date"
 alias c="cal -y"
+alias f="find -name"
 # Network manager
 alias n="nmtui"
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
