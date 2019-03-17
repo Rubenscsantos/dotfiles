@@ -29,6 +29,7 @@ git clone --bare https://github.com/joao/dotfiles.git $HOME/.dotfiles
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/hastinbe/i3-volume.git ~/i3-volume
 
 curl -l \
      https://gist.githubusercontent.com/lucasdavila/3875946/raw/\
