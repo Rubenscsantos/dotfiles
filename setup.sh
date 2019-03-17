@@ -37,17 +37,7 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-mix do escript.install hex ex_doc, local.hex
-mix archive.install hex phx_new 1.4.1
-
-git clone https://github.com/rrrene/bunt.git
-cd bunt
-mix do archive.build, archive.install
-cd -
-git clone https://github.com/rrrene/credo.git
-cd credo
-mix do deps.get, archive.build, archive.install
-cd -
+mix local.hex
 
 sudo usermod -aG docker $USER
 sudo curl -L \
