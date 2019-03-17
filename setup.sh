@@ -6,6 +6,10 @@ sudo add-apt-repository \
    $(lsb_release -cs) \
    stable"
 
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+
 sudo add-apt-repository ppa:kelleyk/emacs
 
 sudo apt update
@@ -17,7 +21,7 @@ sudo apt install git tig tilix xclip feh pgcli mycli ranger zsh tmux tree \
      software-properties-common fzy inotify-tools jq automake emacs26 autoconf \
      libreadline-dev libncurses-dev libssl-dev libyaml-dev libxslt-dev \
      libffi-dev libtool unixodbc-dev docker-ce docker-ce-cli \
-     python-pygments bpython pandoc
+     python-pygments bpython pandoc code-insiders
 
 sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 
