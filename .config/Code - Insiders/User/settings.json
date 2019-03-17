@@ -1,0 +1,17 @@
+{
+    "workbench.colorTheme": "Noctis Lux",
+    "window.restoreFullscreen": true,
+    "window.newWindowDimensions": "fullscreen",
+    "window.menuBarVisibility": "hidden",
+    "editor.formatOnSave": true,
+    "search.quickOpen.includeSymbols": true,
+    "editor.minimap.enabled": false,
+    "editor.wordBasedSuggestions": true,
+    "editor.acceptSuggestionOnEnter": "on",
+    "telemetry.enableTelemetry": false,
+    "gitlens.advanced.telemetry.enabled": false,
+    "telemetry.enableCrashReporter": false,
+    "breadcrumbs.enabled": true,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": true,
+}
