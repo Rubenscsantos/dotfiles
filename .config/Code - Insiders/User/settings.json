@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Noctis Lux",
+    "workbench.colorTheme": "Solarized Dark",
     "window.restoreFullscreen": true,
     "window.newWindowDimensions": "fullscreen",
     "window.menuBarVisibility": "hidden",
@@ -13,5 +13,5 @@
     "telemetry.enableCrashReporter": false,
     "breadcrumbs.enabled": true,
     "editor.wordWrap": "on",
-    "editor.quickSuggestions": true,
+    "editor.quickSuggestions": true
 }
