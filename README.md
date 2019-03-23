@@ -22,7 +22,7 @@ Emacs, vim, code, i3, git, zsh and tmux dotfiles.
 
 ##### Set git status to hide untracked files
 
-`dotfiles config --local status.showUntrackedFiles no`
+`dot config --local status.showUntrackedFiles no`
 
 ##### Checkout the actual content from the git repository to your $HOME
 
