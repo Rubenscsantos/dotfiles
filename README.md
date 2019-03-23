@@ -42,7 +42,7 @@ Open a issue or a pull request.
 
 * **João Thallis** - *Initial work* - [joaothallis](https://github.com/joaothallis)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/joaothallis/dotfiles/contributors) who participated in this project.
 
 ## License
 
