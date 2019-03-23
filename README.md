@@ -14,7 +14,7 @@ Emacs, vim, code, i3, git, zsh and tmux dotfiles.
 
 ##### Clone this repository
 
-`git clone --bare https://github.com/joaothallis/dotfiles.git $HOME/.dotfiles`
+`git clone --bare git@github.com:joaothallis/dotfiles.git $HOME/.dotfiles`
 
 ##### Define this alias in the current shell scope
 
