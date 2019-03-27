@@ -48,8 +48,6 @@ alias my="mpsyt"
 
 export KUBECONFIG=$HOME/k8s/kub-config-inside-hml
 export ZSH="/home/joao/.oh-my-zsh"
-export EDITOR=code
-export VISUAL=code
 export TERM="xterm-256color"
 
 . $HOME/.asdf/asdf.sh
