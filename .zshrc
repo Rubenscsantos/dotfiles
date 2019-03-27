@@ -15,6 +15,7 @@ alias co="mix coveralls.html && firefox cover/excoveralls.html"
 alias de="date"
 alias c="cal -y"
 alias f="find -name"
+alias code-insiders="code-insiders ."
 # Network manager
 alias n="nmtui"
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
