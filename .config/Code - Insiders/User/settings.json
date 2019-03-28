@@ -13,5 +13,6 @@
     "telemetry.enableCrashReporter": false,
     "breadcrumbs.enabled": true,
     "editor.wordWrap": "on",
-    "editor.quickSuggestions": true
+    "editor.quickSuggestions": true,
+    "workbench.startupEditor": "none",
 }
