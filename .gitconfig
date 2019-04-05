@@ -1,16 +1,9 @@
 [user]
-	name = João Thallis
-	email = joaothallis.developer@gmail.com
-[magithub]
-	online = false
-[magithub "status"]
-	includeStatusHeader = false
-	includePullRequestsSection = false
-	includeIssuesSection = false
+	email = contato.rubenscsantos@gmail.com
+	name = Rubens Santos
 [core]
-	editor = vim
-	excludesfile = /home/joao/.gitignore_global
-[push]
-	default = current
-[github]
-	user = joaothallis
+	excludesfile = /home/rubens/.gitignore_global
+[alias]
+	gg = log --all --graph --decorate --oneline
+  	current = rev-parse --abbrev-ref HEAD
+  	pushersson = !git push origin $(git current)
