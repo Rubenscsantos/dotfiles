@@ -43,39 +43,48 @@ alias ku='kubectx "$(kubectx | fzy)"'
 alias k='kubens "$(kubens | fzy)"'
 alias ge="kubectl get endpoints"
 
-# Youtube CLI
-alias my="mpsyt"
-
-export KUBECONFIG=$HOME/k8s/kub-config-inside-hml
-export ZSH="/home/joao/.oh-my-zsh"
+export KUBECONFIG=~/k8s/hml-inside
+export ZSH="/home/rubens/.oh-my-zsh"
 export TERM="xterm-256color"
 
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 
 ZSH_THEME=crunch
-plugins=(git kubectl web-search)
+plugins=(
+        git 
+        kubectl 
+        zsh-syntax-highlighting
+        zsh-autosuggestions
+        )
+        
 source $ZSH/oh-my-zsh.sh
-unsetopt correct_all
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/joao/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/joao/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/joao/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/joao/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+function remote_console {
+ if [ "$2" = "" ]
+ then
+   command=`echo $1 | tr - _`
+ else
+   command=$2
+ fi 
+ 
+ pod=`kubectl -n $1 get pods --no-headers  -o=jsonpath='{.items[0].metadata.name}'`
+ 
+ kubectl -n $1 exec -it $pod /bin/bash -c $1 ./bin/$command remote_console
+}
 
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte.sh
-fi
+function remote_console_no_destillery {
+   $(kubectl -n $1 get pod -o=jsonpath='{"kubectl -n '$1' exec -it "}{.items[0].metadata.name}{" -c '$1' -- /bin/bash"}') 
+}
 
-alias kubeip=$'kubectl describe service | grep Endpoint | grep -v none | awk \'{ print $2 }\''
-alias kubepod=$'kubectl get pod --no-headers | awk \'NR==1{print $1}\''
-kubenv() { kubectl exec -it $(kubepod) -c $1 printenv }
-kubexec() { kubectl exec -it $(kubepod) -c $1 /bin/bash }
-kubeforward() { kubectl port-forward deploy/$1 5432:5432 }
+function get_envs {
+  pod=`kubectl -n $1 get pods --no-headers  -o=jsonpath='{.items[0].metadata.name}'`
+  kubectl -n $1 exec -it $pod -c $1 env
+}
 
-alias u="kubectl describe service | grep Endpoint | grep -v none | awk '{ print $2 }'| xclip -selection c"
 
-# kubectl config
-export KUBECONFIG=/home/joao/.kube/stone
+function port_forward {
+  kubectl -n $1 port-forward deployment/$1 5432:5432
+}
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
